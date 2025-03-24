@@ -71,28 +71,28 @@
  res=root_chords(&x,0.5,3,funk_1,1.e-15);
  if(res)
  {
- printf("x=%lg\n �᫮ ���権=%d\n",x,res-1);
- printf("�᫮ ���饭�� � �㭪樨=%d\n",nf);
- printf("��᮫�⭠� ����譮���:%lg\n",fabs(x-1));
- printf("��᮫�⭠� ����譮���:%lg\n",fabs((x-1)/1));
+ printf("x=%lg\n ç¨á«® ¨â¥à æ¨©=%d\n",x,res-1);
+ printf("ç¨á«® ®¡à é¥­¨© ª äã­ªæ¨¨=%d\n",nf);
+ printf(" ¡á®«îâ­ ï ¯®£à¥è­®áâì:%lg\n",fabs(x-1));
+ printf(" ¡á®«îâ­ ï ¯®£à¥è­®áâì:%lg\n",fabs((x-1)/1));
  }
  else
  {
- printf("��⮤ �� �ਬ����\n");
+ printf("¬¥â®¤ ­¥ ¯à¨¬¥­¨¬\n");
  }
  nf=0;
   printf("2) arctg(x)=0\n");
   res=root_chords(&x,-2,2,funk_2,1.e-15);
  if(res)
  {
- printf("x=%lg\n �᫮ ���権=%d\n",x,res-1);
- printf("�᫮ ���饭�� � �㭪樨=%d\n",nf);
- printf("��᮫�⭠� ����譮���:%lg\n",fabs(x-0));
- printf("��᮫�⭠� ����譮���:%lg\n",fabs((x-0)/0));
+ printf("x=%lg\n ç¨á«® ¨â¥à æ¨©=%d\n",x,res-1);
+ printf("ç¨á«® ®¡à é¥­¨© ª äã­ªæ¨¨=%d\n",nf);
+ printf(" ¡á®«îâ­ ï ¯®£à¥è­®áâì:%lg\n",fabs(x-0));
+ printf(" относительная погрешность не вычисляется\n");
  }
  else
  {
- printf("��⮤ �� �ਬ����\n");
+ printf("¬¥â®¤ ­¥ ¯à¨¬¥­¨¬\n");
  }
  
   nf=0;
@@ -100,14 +100,14 @@
   res=root_chords(&x,0,2,funk_3,1.e-15);
  if(res)
  {
- printf("x=%lg\n �᫮ ���権=%d\n",x,res-1);
- printf("�᫮ ���饭�� � �㭪樨=%d\n",nf);
- printf("��᮫�⭠� ����譮���:%lg\n",fabs(x-2));
- printf("��᮫�⭠� ����譮���:%lg\n",fabs((x-2)/2));
+ printf("x=%lg\n ç¨á«® ¨â¥à æ¨©=%d\n",x,res-1);
+ printf("ç¨á«® ®¡à é¥­¨© ª äã­ªæ¨¨=%d\n",nf);
+ printf(" ¡á®«îâ­ ï ¯®£à¥è­®áâì:%lg\n",fabs(x-2));
+ printf(" ¡á®«îâ­ ï ¯®£à¥è­®áâì:%lg\n",fabs((x-2)/2));
  }
  else
  {
- printf("��⮤ �� �ਬ����\n");
+ printf("¬¥â®¤ ­¥ ¯à¨¬¥­¨¬\n");
  }
  return 0;
  }
