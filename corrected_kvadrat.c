@@ -23,7 +23,7 @@ double rel_error(double x, double x_p)
  d=b*b-4*c;
  if(d<0) return 0;
  
-*x1_p=(-b+sign(b)*sqrt(d))/2;
+*x1_p=-(b+sign(b)*sqrt(d))/2;
  *x2_p=c/ *x1_p;
  return 1;
  }
@@ -34,7 +34,7 @@ double rel_error(double x, double x_p)
    printf("‚¢¥¤¨â¥ ª®à­¨ ãà ¢­¥­¨ï:\n");
    scanf("%lg %lg", &x1,&x2);	
    	
-   if(fabs(x1)>fabs(x2))
+   if(fabs(x1)<fabs(x2))
    {
 	   double t=x2;
 	   x2=x1;
