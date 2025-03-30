@@ -46,11 +46,11 @@ double rel_error(double x, double x_p)
    
    kvadr(b,c,&x1_p,&x2_p);
    
-   printf("à¨¡«¨§¨â¥«ì­ë¥ ª®à­¨ ãà ¢­¥­¨ï: %lf %lf\n ", x1_p,x2_p);
+   printf("à¨¡«¨§¨â¥«ì­ë¥ ª®à­¨ ãà ¢­¥­¨ï: %le %le\n ", x1_p,x2_p);
    
-   printf("€¡á®«îâ­ ï ¯®£à¥è­®áâì 1-£® ª®à­ï: %lf\n", abs_error(x1, x1_p));
-   printf("€¡á®«îâ­ ï ¯®£à¥è­®áâì 2-£® ª®à­ï: %lf\n", abs_error(x2, x2_p));
-   printf("Žâ­®á¨â¥«ì­ ï ¯®£à¥è­®áâì 1-£® ª®à­ï: %lf\n", rel_error(x1, x1_p));
-   printf("Žâ­®á¨â¥«ì­ ï ¯®£à¥è­®áâì 2-£® ª®à­ï: %lf\n", rel_error(x2, x2_p));
+   printf("€¡á®«îâ­ ï ¯®£à¥è­®áâì 1-£® ª®à­ï: %le\n", abs_error(x1, x1_p));
+   printf("€¡á®«îâ­ ï ¯®£à¥è­®áâì 2-£® ª®à­ï: %le\n", abs_error(x2, x2_p));
+   printf("Žâ­®á¨â¥«ì­ ï ¯®£à¥è­®áâì 1-£® ª®à­ï: %le\n", rel_error(x1, x1_p));
+   printf("Žâ­®á¨â¥«ì­ ï ¯®£à¥è­®áâì 2-£® ª®à­ï: %le\n", rel_error(x2, x2_p));
  }
 
