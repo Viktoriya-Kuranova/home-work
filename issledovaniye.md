@@ -21,7 +21,8 @@
 - Решение интегрального уравнения существует при $\alpha \in [0;\ 1.854]$
     
     ## График функции $f(x)=\frac{1}{\sqrt{1 + t^4}}\,$ :
-     ![alt text](image.png)
+     ![image](https://github.com/user-attachments/assets/02dbc955-5b16-4213-8dcd-77f1c4a917f0)
+
 
 
 
