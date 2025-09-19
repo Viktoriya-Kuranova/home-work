@@ -20,18 +20,25 @@ int main()
         return 1;
     }
 
-    string line;
-    while (getline(fin, line)) 
+    string name,surname,father;
+    int birthday;
+    double score;
+    if(fin>>surname>>name>>father>>birthday>>score)
     {
-        fout << line << '\n';
-    }
-
-    if (!fin.eof()) 
+	  char m;
+	  if(fin>>m) cout<<"файл некорректен\n"<<endl;	
+      else if (!fin.eof()) 
     {
         cout<< "конец файла не достигнут\n"<<endl;
         return 2;
     }
-
-    cout << "Копирование успешно завершено\n"<<endl;
+    else
+    { 
+	  fout<<surname<<" "<<name<<" "<<father<<" "<<birthday<<" "<<score;
+      cout << "Копирование успешно завершено\n"<<endl;
+    }
+    }
+    else cout<<" ошибка при чтении файла"<<endl;
     return 0;
 }
+
