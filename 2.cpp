@@ -16,12 +16,8 @@ int main(int argc, char **argv)
         cout<< "не удалось открыть 1 файл\n"<<endl;
         return 2;
     }
-    
-    int x;
-    while(fin>>x)
-    cout<<x<<endl;
-    cout<<"------------------------------------------------------------"<<endl;
-    fin.close();
+   
+  
     ofstream fout(argv[2]);
     if (!fout.is_open()) 
     {
@@ -29,12 +25,24 @@ int main(int argc, char **argv)
         return 2;
     }
 
-    if (!fin.eof()) 
+    string name,surname,father;
+    int birthday;
+    double score;
+    if(fin>>surname>>name>>father>>birthday>>score)
+    {cout<<"1"<<endl;
+	  char m;
+	  if(fin>>m) cout<<"файл некорректен\n"<<endl;	
+      else if (!fin.eof()) 
     {
-        cout<< "Ошибка чтения: конец файла не достигнут (возможна повреждённая запись)\n"<<endl;
-        return 3;
+        cout<< "конец файла не достигнут\n"<<endl;
+        return 2;
     }
-
-    cout << "Копирование успешно завершено\n"<<endl;
+    else
+    { 
+	  fout<<surname<<" "<<name<<" "<<father<<" "<<birthday<<" "<<score;
+      cout << "Копирование успешно завершено\n"<<endl;
+    }
+    }
+    else cout<<" ошибка при чтении файла"<<endl;
     return 0;
 }
