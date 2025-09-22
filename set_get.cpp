@@ -2,7 +2,7 @@
 using namespace std;
 class Student 
 {
-private: //в классе по умолчанию переменные открытые,поэтому прописываем private для закрытия
+private: //закрытые переменные
     string name;  
     int  score;    
 public:
