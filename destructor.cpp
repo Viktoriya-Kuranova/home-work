@@ -2,26 +2,22 @@
 using namespace std;
 
 class Simple 
-{
-public:
-    Simple() 
+{ int* size;
+  public:
+    Simple(int b) 
     {
-        cout<<"‚ ª®­áâàãªâ®à¥!"<<endl;
+      size=new int[b];
+        cout<<"â€š ÂªÂ®Â­Ã¡Ã¢Ã Ã£ÂªÃ¢Â®Ã Â¥!"<<endl;  
     }
-    ~Simple() 
-    {
-        cout<<"‚ ¤¥áâàãªâ®à¥!"<<endl;
-    }
+  
 };
 
 int main() 
-{
-    for (int i=0;i<3;i++)
+{ 
+    for (int i=0;i<1000000;i++)
     {
-        cout<< "ˆâ¥à æ¨ï "<<i+1<<endl;
-        Simple s; 
-        cout<<"Ž¡ê¥ªâ ¨á¯®«ì§ã¥âáï"<<endl;
+      Simple f(i);        
     }
-    cout<<"–¨ª« § ¢¥àèñ­"<<endl;
+    cout<<"â€“Â¨ÂªÂ« Â§Â Â¢Â¥Ã Ã¨Ã±Â­"<<endl;
     return 0;
 }
